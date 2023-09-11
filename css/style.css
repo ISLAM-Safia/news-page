@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBFAFA;
+    color: #293755;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+     list-style: none;
+}
+
+.wrapper {
+    margin: 100px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    margin-bottom: 20px;
+   
+}
+
+.title::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #293755;;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -10px;
+
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    width: 32%;
+    background-color: #fff;
+    box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    height: 200px;
+    
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+}
+
+.card-content {
+    padding: 13px;
+}
+.card-content h3 {
+    margin-top: 10px;
+    max-width: 10px 0;
+}
+.card-content span {
+    font-size: 12px;
+    color: #555;
+}
+
+.card-content p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.card-content a {
+    font-size: 12px;
+    color: #293755;
+}
+
+.card-content a i {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #3E4B6F;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-content {
+    background-color: #293755;
+    color: #fff;
+    width: 30%;
+    padding: 50px 25px;
+    border-radius: 7px;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+.footer-content form input {
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    width: 65%;
+}
+
+.footer-content form input:focus {
+    outline: none;
+}
+
+.footer-content form button {
+    width: 30%;
+    padding: 15px 0;
+    background-color: #FED527;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer ul li a {
+        color: #fff;
+}
+
+footer ul.social li a.icon  {
+    background-color: #293755;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-right: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-wrapper div, ul {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
